@@ -13,7 +13,7 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDType0Font;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 
-public class BibleSplicer {
+public class pdfSplicer {
 
     private static int pdfNum = 1;
     private static int chapterNum = 1;
@@ -26,7 +26,7 @@ public class BibleSplicer {
 
     public static void main(String[] args) {
         ensureOutputDir();
-        SwingUtilities.invokeLater(BibleSplicer::createAndShowGUI);
+        SwingUtilities.invokeLater(pdfSplicer::createAndShowGUI);
         startClipboardListener();
     }
 
